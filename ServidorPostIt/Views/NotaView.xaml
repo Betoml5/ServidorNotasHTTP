@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ServidorPostIt.Views.NotaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServidorPostIt.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderThickness="1" BorderBrush="Black" Background="Beige" Padding="5" RenderTransformOrigin="0.5,0">
+        <Border.RenderTransform >
+            <RotateTransform Angle="{Binding Angulo}"></RotateTransform>
+        </Border.RenderTransform>
+        <StackPanel>
+            <TextBlock Text="{Binding Titulo}" TextAlignment="Center" FontWeight="Bold" FontSize="12" Height="20"></TextBlock>
+            <TextBlock Text="{Binding Contenido}" TextAlignment="Justify" Height="80" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"> </TextBlock>
+            <TextBlock Text="{Binding Remitente}" TextAlignment="Right" FontSize="10" Height="15"></TextBlock>
+        </StackPanel>
+    </Border>
+</UserControl>

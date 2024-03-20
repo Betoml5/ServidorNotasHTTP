@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nota de los alumnos</title>
+</head>
+<body>
+    <h1>Nota</h1>
+    <form action="./crear" method="POST">
+        <label>Titulo</label> <br />
+        <input type="text" name="titulo" /><br />
+        <label>Contenido</label><br />
+        <textarea rows="5" type="text" name="contenido"></textarea> <br />
+
+        <label>Posicion</label>  <br />
+        <input type="range" value="" id="" max="100" name="x" /> 
+        <input type="range" value="" id="" max="100" name="y" /> 
+        <br />
+
+        <input type="submit" value="Enviar nota" />
+    </form>
+</body>
